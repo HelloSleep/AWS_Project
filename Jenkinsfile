@@ -42,6 +42,7 @@ pipeline {
     }
     post {
         always{
+            sh 'terraform output'
             sh 'terraform state list'
         }
     }

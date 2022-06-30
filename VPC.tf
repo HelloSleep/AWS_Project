@@ -75,7 +75,7 @@ resource "aws_subnet" "global-private-subnet-c-web" {
   availability_zone = var.az_c
 
   tags = {
-    Name = "HELOOOOO"
+    Name = "global-private-subnet-c-web"
   }
 }
 
