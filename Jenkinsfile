@@ -46,11 +46,11 @@ pipeline {
             sh 'terraform state list'
         }
         success {
-			slackSend channel: 'devops', message: 'it is builded succesed'
+			slackSend channel: 'devops', message: 'Seoul region is builded succesed'
 	}
 	
 	failure {
-			slackSend channel: 'devops', message: 'This build is failed'
+			slackSend channel: 'devops', message: 'Seoul is build is failed'
 	}
 
     }
