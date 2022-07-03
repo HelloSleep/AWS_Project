@@ -52,8 +52,6 @@ pipeline {
 	failure {
 			slackSend channel: 'devops', message: 'This build is failed'
 	}
-	always {
-            sh 'terraform state list'
-  }
+
     }
 }
